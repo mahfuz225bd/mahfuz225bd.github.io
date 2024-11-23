@@ -11,43 +11,67 @@
             padding: 20px;
             background-color: #f9f9f9;
         }
+        
         header {
             text-align: center;
             margin-bottom: 20px;
         }
+        
         main {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
         }
+        
         article {
             background: white;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 15px;
         }
-        a {
-            display: inline-block;
-            margin-right: 10px;
-            text-decoration: none;
-            color: #007bff;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        
         .button {
+            display: inline-block;
+            font-weight: bold;
             padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .button-default {
             color: white;
             background-color: #007bff;
             border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
         }
-        .button:hover {
+        
+        .button-default:hover {
             background-color: #0056b3;
         }
+        
+        .button-bordered {
+            color: #007bff;
+            background-color: transparent;
+            border: 2px solid #007bff;
+        }
+        
+        .button-bordered:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                width: 100%; /* Full width for smaller screens */
+                max-width: 100%; /* Ensure it doesn't exceed screen width */
+            }
+        }
     </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -61,10 +85,16 @@
         <h2>Eased Layout</h2>
         <p>Some description</p>
         <p>Status: Working</p>
-		<p>Note: Need almost 2 weeks to complete and publish the first release.</p>
-        <a href="https://github.com/yourusername/project1" target="_blank">GitHub Source</a>
-        <a href="https://your-demo-link.com" target="_blank">Demo</a>
-        <a href="https://github.com/yourusername/project1/archive/refs/heads/main.zip" class="button">Download</a>
+        <p>Note: Need almost 2 weeks to complete and publish the first release.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank" class="button button-bordered">
+    <i class="fa-solid fa-code"></i> Source Code
+</a>
+<a href="https://your-demo-link.com" target="_blank" class="button button-bordered">
+    <i class="fa-solid fa-globe"></i> Demo
+</a>
+<a href="https://github.com/yourusername/project1/archive/refs/heads/main.zip" class="button button-default">
+    <i class="fa fa-download"></i> Download
+</a>
     </article>
 </main>
 
