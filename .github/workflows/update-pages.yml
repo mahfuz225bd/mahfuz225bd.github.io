@@ -17,8 +17,8 @@ jobs:
         run: |
           git clone https://github.com/mahfuz225bd/mahfuz225bd.github.io.git pages
           cd pages
-          git config user.name "mahfuz225bd@gmail.com"
-          git config user.email "mahfuz225bd@gmail.com"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
 
       - name: Copy Files to Pages Repo
         run: |
