@@ -1,0 +1,19 @@
+a.btn {
+    display: inline-block;
+}
+
+a.btn:hover {
+    color: #FFF;
+}
+
+.btn.success {
+    background-color: #048657;
+}
+
+.btn.success:hover {
+    background-color: #059862;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
