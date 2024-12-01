@@ -1,0 +1,186 @@
+@import url('./icon-bar.css');
+@import url('./btn.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* border: 1px solid #000; */
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: #E7E9EB;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+}
+
+/* change to dark theme */
+.container.dark {
+    background-color: #38444d;
+}
+
+.container.dark nav a:hover {
+    background-color: #ccc;
+    color: #757575;
+}
+
+.container.dark,
+.container.dark a {
+    color: #ddd;
+}
+
+.container.dark #inputCode {
+    background-color: #15202b;
+    color: #E7E9EB;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .btn {
+    margin-top: 6px;
+    height: 36px;
+}
+
+header nav {
+    overflow: hidden;
+    max-height: 48px;
+    width: 49.65vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+main>section {
+    width: 50%;
+}
+
+main>section.left {
+    padding: 1px 5px 1px 10px;
+}
+
+main>section.right {
+    padding: 1px 10px 1px 5px;
+}
+
+/* For changing orientation */
+main.view-orientation-2 {
+    flex-direction: column;
+}
+
+main.view-orientation-2>section.left,
+main.view-orientation-2>section.right {
+    width: 100%;
+    height: 50%;
+}
+
+main.view-orientation-2>section {
+    padding: 1px 10px 10px 10px;
+}
+
+main.view-orientation-2>section.right {
+    padding-bottom: 1px;
+}
+
+#inputCode,
+#outputCode {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    border: none;
+}
+
+#inputCode {
+    font-family: consolas, Menlo, "courier new", monospace;
+    font-size: 15px;
+    resize: none;
+    outline: none;
+}
+
+#outputCode {
+    background-color: #FFF;
+}
+
+.output-frame-size {
+    font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
+    margin-right: 9px;
+}
+
+.btn {
+    border: none;
+    color: #FFF;
+    padding: 6px 25px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover,
+.container.dark a:not(header a):hover {
+    color: crimson;
+}
+
+footer {
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 9px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        width: initial;
+    }
+
+    header .btn {
+        margin-top: initial;
+        display: inline;
+    }
+
+    header>section {
+        width: 100%;
+        height: 50%;
+        padding: 1px 10px 10px 10px;
+    }
+
+    header>section.left {
+        padding-bottom: 0;
+    }
+
+    header>section.right {
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>section.right {
+        margin-left: 9px;
+    }
+}
