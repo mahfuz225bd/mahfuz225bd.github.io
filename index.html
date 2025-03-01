@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,12 @@
             padding: 20px;
             background-color: #f9f9f9;
         }
-        
+
         header {
             text-align: center;
             margin-bottom: 20px;
         }
-        
+
         main {
             display: flex;
             flex-direction: column;
@@ -25,14 +26,14 @@
             max-width: 600px;
             margin: 0 auto;
         }
-        
+
         article {
             background: white;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 15px;
         }
-        
+
         .button {
             display: inline-block;
             font-weight: bold;
@@ -42,61 +43,90 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-        
+
         .button-default {
             color: white;
             background-color: #007bff;
             border: none;
         }
-        
+
         .button-default:hover {
             background-color: #0056b3;
         }
-        
+
         .button-bordered {
             color: #007bff;
             background-color: transparent;
             border: 2px solid #007bff;
         }
-        
+
         .button-bordered:hover {
             background-color: #007bff;
             color: white;
         }
-        
+
+        [disabled] {
+            cursor: not-allowed;
+            opacity: .5;
+        }
+
         @media (max-width: 768px) {
             main {
-                width: 100%; /* Full width for smaller screens */
-                max-width: 100%; /* Ensure it doesn't exceed screen width */
+                width: 100%;
+                /* Full width for smaller screens */
+                max-width: 100%;
+                /* Ensure it doesn't exceed screen width */
             }
         }
     </style>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <h1>Hi, I am Mahfuz</h1>
-    <h3>My Contributed Projects to the Open Source Community</h3>
-</header>
+    <header>
+        <h1>Hi, I am Mahfuz</h1>
+        <h3>My Contributed Projects to the Open Source Community</h3>
+    </header>
 
-<main>
-    <article>
-        <h2>Eased Layout</h2>
-        <p>Some description</p>
-        <p>Status: Working</p>
-        <p>Note: Need almost 2 weeks to complete and publish the first release.</p>
-        <a href="https://github.com/yourusername/project1" target="_blank" class="button button-bordered">
-    <i class="fa-solid fa-code"></i> Source Code
-</a>
-<a href="https://your-demo-link.com" target="_blank" class="button button-bordered">
-    <i class="fa-solid fa-globe"></i> Demo
-</a>
-<a href="https://github.com/yourusername/project1/archive/refs/heads/main.zip" class="button button-default">
-    <i class="fa fa-download"></i> Download
-</a>
-    </article>
-</main>
+    <main>
+        <article>
+            <h2>Eased Layout</h2>
+            <p>The eased-layout.css library provides predefined CSS for building web layouts. It offers a pre-designed
+                responsive layout with HTML5 semantic elements such as header, aside, main, section, article, and
+                footer, as well as a multi-columned grid system that offers 12 columns as primary and also can be
+                extended with just a CSS variable.</p>
+            <p>Status: Completed with most required features, but not released the first version yet.</p>
+            <a href="https://github.com/mahfuz225bd/eased-layout" target="_blank" class="button button-bordered">
+                <i class="fa-solid fa-code"></i> Source Code
+            </a>
+            <a href="https://your-demo-link.com" target="_blank" class="button button-bordered" disabled>
+                <i class="fa-solid fa-globe"></i> Demo
+            </a>
+            <a href="https://github.com/mahfuz225bd/eased-layout/archive/refs/heads/main.zip"
+                class="button button-default">
+                <i class="fa fa-download"></i> Download
+            </a>
+        </article>
+        <article>
+            <h2>Smart Pager</h2>
+            <p>SmartPager is a JavaScript library designed to handle pagination of data. It offers functionality to
+                manage paginated data efficiently, providing methods to retrieve data for specific pages, calculate the
+                total number of pages, and more.</p>
+            <p>Status: Completed with most required features, but not released the first version yet.</p>
+            <a href="https://github.com/mahfuz225bd/smart-pager" target="_blank" class="button button-bordered">
+                <i class="fa-solid fa-code"></i> Source Code
+            </a>
+            <a href="https://your-demo-link.com" target="_blank" class="button button-bordered" disabled>
+                <i class="fa-solid fa-globe"></i> Demo
+            </a>
+            <a href="https://github.com/mahfuz225bd/smart-pager/archive/refs/heads/main.zip"
+                class="button button-default">
+                <i class="fa fa-download"></i> Download
+            </a>
+        </article>
+    </main>
 
 </body>
+
 </html>
